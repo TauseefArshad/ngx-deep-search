@@ -7,6 +7,7 @@
 | 16.x.x             | 16          |
 | 17.x.x             | 17          |
 
+
 View example
 
 ![alt](https://github.com/TauseefArshad/ngx-deep-search/blob/master/assets/search.png?raw=true)
@@ -16,6 +17,15 @@ View example
 ### Install This Library
 
 `$ npm install ngx-deep-search`
+
+## Example
+
+Refer to main app in this repository for working example.
+
+Or this:
+
+[Stackblitz Demo (Angular 16)](https://stackblitz.com/~/github.com/TauseefArshad/ngx-deep-search)
+
 
 ## Usage
 
