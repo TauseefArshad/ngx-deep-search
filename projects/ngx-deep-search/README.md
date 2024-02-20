@@ -9,7 +9,7 @@
 
 View example
 
-![alt](https://github.com/TauseefArshad/ngx-deep-search/blob/main/assets/search.png?raw=true)
+![alt](https://github.com/TauseefArshad/ngx-deep-search/blob/master/assets/search.png?raw=true)
 
 ## Installation
 
