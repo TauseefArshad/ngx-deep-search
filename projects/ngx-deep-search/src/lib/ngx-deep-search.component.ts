@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class NgxDeepSearchComponent implements OnInit {
   @Input() placeholder: string = 'Search'
-  @Input() searchFromKeys: any[] = []
+  @Input() searchFromKeys: string[] = []
   @Input() dataList: any[] = []
   @Output() resultedData: EventEmitter<any[]> = new EventEmitter();
 

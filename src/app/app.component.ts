@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ngx-deep-search-app';
   filteredList: any[] = []
-  accessKeys: any[] = ['balance', 'eyeColor', 'name', 'company', 'email','gender','email','favoriteFruit']
+  accessKeys: string[] = ['balance', 'eyeColor', 'name', 'company', 'email','gender','email','favoriteFruit']
 
-  searchedData(data: any) {
+  resultedData(data: any[]) {
     this.filteredList = data
   }
 

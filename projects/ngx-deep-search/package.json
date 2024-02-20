@@ -1,10 +1,29 @@
 {
   "name": "ngx-deep-search",
-  "version": "0.0.1",
+  "version": "16.0.0",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TauseefArshad/ngx-deep-search"
+  },
+  "author": {
+    "name": "Tauseef Arshad",
+    "email": "itauseefarshad@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular16",
+    "search",
+    "deep-search",
+    "table search",
+    "custom search",
+    "deep list search"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
   },
