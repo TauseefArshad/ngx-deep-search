@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./ngx-deep-search.component.css']
 })
 export class NgxDeepSearchComponent implements OnInit {
-  @Input() inputLabel: string = 'Search'
+  @Input() placeholder: string = 'Search'
   @Input() searchFromKeys: any[] = []
   @Input() dataList: any[] = []
   @Output() resultedData: EventEmitter<any[]> = new EventEmitter();
@@ -20,25 +20,25 @@ export class NgxDeepSearchComponent implements OnInit {
   }
 
   onValueChange(event: any) {
-    let p = event.target;
-    let filterd = this.search(p.value)
+    const p = event.target;
+    const filterd = this.search(p.value)
     this.resultedData.emit(filterd)
   }
 
 
   search(searchValue: any) {
-    this.filteredData = []
+    const filteredData = []
     for (let i = 0; i < this.dataList.length; i++) {
       const product = this.dataList[i];
-      let productProperties = this.searchFromKeys.map((key: any) => product[key]).join(',').toLowerCase();
+      let productProperties = this.searchFromKeys.map((key: string) => product[key]).join(',').toLowerCase();
       productProperties = productProperties.replace(/undefined/g, '');
-      let searchQuery = searchValue.toLowerCase();
+      const searchQuery = searchValue.toLowerCase();
 
-      let andOption: any = [];
+      const andOption: any = [];
       let stringArray2 = searchQuery.split(' ');
       if (stringArray2.length > 0) {
-        stringArray2 = stringArray2.filter((i: any) => i != '');
-        stringArray2.forEach((i: any) => {
+        stringArray2 = stringArray2.filter((i: string) => i != '');
+        stringArray2.forEach((i: string) => {
           if (productProperties.indexOf(i) > -1 && i != '') {
             andOption.push('true')
           }
@@ -48,10 +48,10 @@ export class NgxDeepSearchComponent implements OnInit {
         })
       }
       if (!andOption.includes('false')) {
-        this.filteredData.push(product)
+        filteredData.push(product)
       }
     }
-    return this.filteredData
+    return filteredData
   }
 
 
