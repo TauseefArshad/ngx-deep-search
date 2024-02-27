@@ -1,9 +1,9 @@
 {
   "name": "ngx-deep-search",
-  "version": "16.0.2",
+  "version": "16.0.3",
   "peerDependencies": {
-    "@angular/common": "^16.x - 17.x",
-    "@angular/core": "^16.x - 17.x"
+    "@angular/common": "16.x - 17.x",
+    "@angular/core": "16.x - 17.x"
   },
 
   "repository": {
